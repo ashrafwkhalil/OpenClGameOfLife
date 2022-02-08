@@ -1,0 +1,37 @@
+﻿main.cpp(222,15): : warning : format specifies type 'int' but the argument has type 'long' [-Wformat]
+          printf("%d", 1000 / (clock() - timeeeeee));
+                  ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                  %ld
+main.cpp(300,7): : warning : attempt to call free on non-heap object 'device_ids' [-Wfree-nonheap-object]
+          free(device_ids);
+               ^
+main.cpp(315,14): : warning : 'clCreateCommandQueue' is deprecated [-Wdeprecated-declarations]
+          queue_cpu = clCreateCommandQueue(m_contextcpu, cdDevices2[0], 0, &err);
+                      ^
+  D:\Users\Ashraf\Downloads\tutorial_6\tutorial_6\tutorial_6\Dependencies\OpenCL-SDK\external\OpenCL-Headers\CL/cl.h(1905,21): note: 'clCreateCommandQueue' has been explicitly marked deprecated here
+  extern CL_API_ENTRY CL_API_PREFIX__VERSION_1_2_DEPRECATED cl_command_queue CL_API_CALL
+                      ^
+  D:\Users\Ashraf\Downloads\tutorial_6\tutorial_6\tutorial_6\Dependencies\OpenCL-SDK\external\OpenCL-Headers\CL/cl_platform.h(109,72): note: expanded from macro 'CL_API_PREFIX__VERSION_1_2_DEPRECATED'
+      #define CL_API_PREFIX__VERSION_1_2_DEPRECATED CL_API_PREFIX_COMMON CL_API_PREFIX_DEPRECATED
+                                                                         ^
+  D:\Users\Ashraf\Downloads\tutorial_6\tutorial_6\tutorial_6\Dependencies\OpenCL-SDK\external\OpenCL-Headers\CL/cl_platform.h(82,47): note: expanded from macro 'CL_API_PREFIX_DEPRECATED'
+    #define CL_API_PREFIX_DEPRECATED __declspec(deprecated)
+                                                ^
+main.cpp(357,14): : warning : 'clCreateCommandQueue' is deprecated [-Wdeprecated-declarations]
+          queue_gpu = clCreateCommandQueue(m_context, cdDevices[0], 0, NULL);
+                      ^
+  D:\Users\Ashraf\Downloads\tutorial_6\tutorial_6\tutorial_6\Dependencies\OpenCL-SDK\external\OpenCL-Headers\CL/cl.h(1905,21): note: 'clCreateCommandQueue' has been explicitly marked deprecated here
+  extern CL_API_ENTRY CL_API_PREFIX__VERSION_1_2_DEPRECATED cl_command_queue CL_API_CALL
+                      ^
+  D:\Users\Ashraf\Downloads\tutorial_6\tutorial_6\tutorial_6\Dependencies\OpenCL-SDK\external\OpenCL-Headers\CL/cl_platform.h(109,72): note: expanded from macro 'CL_API_PREFIX__VERSION_1_2_DEPRECATED'
+      #define CL_API_PREFIX__VERSION_1_2_DEPRECATED CL_API_PREFIX_COMMON CL_API_PREFIX_DEPRECATED
+                                                                         ^
+  D:\Users\Ashraf\Downloads\tutorial_6\tutorial_6\tutorial_6\Dependencies\OpenCL-SDK\external\OpenCL-Headers\CL/cl_platform.h(82,47): note: expanded from macro 'CL_API_PREFIX_DEPRECATED'
+    #define CL_API_PREFIX_DEPRECATED __declspec(deprecated)
+                                                ^
+  In file included from main.cpp:29:
+  In file included from D:\Users\Ashraf\Downloads\tutorial_6\tutorial_6\tutorial_6\Dependencies\freeglut\include\GL/freeglut.h:17:
+D:\Users\Ashraf\Downloads\tutorial_6\tutorial_6\tutorial_6\Dependencies\freeglut\include\GL/freeglut_std.h(627,32): : warning : unused function 'glutCreateMenu_ATEXIT_HACK' [-Wunused-function]
+  static int FGAPIENTRY FGUNUSED glutCreateMenu_ATEXIT_HACK(void (* func)(int)) { return __glutCreateMenuWithExit(func, exit); }
+                                 ^
+  5 warnings generated.
